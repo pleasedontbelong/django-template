@@ -1,6 +1,6 @@
 import os
 
-ENVIRONMENT = os.getenv('ENVIRONMENT')
+ENVIRONMENT = os.getenv('ENVIRONMENT', 'local')
 
 if ENVIRONMENT is None:
     raise ValueError('ENVIRONMENT is a mandatory variable!')
