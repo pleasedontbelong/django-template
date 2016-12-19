@@ -10,10 +10,17 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
-import os
+from os.path import dirname, join, realpath, abspath
+from sys import path
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = dirname(dirname(abspath(__file__)))
+ROOT = realpath(join(dirname(__file__), '..'))
+
+path[0:0] = [
+    join(ROOT, 'apps'),
+]
 
 
 # Quick-start development settings - unsuitable for production
@@ -37,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -76,7 +84,7 @@ WSGI_APPLICATION = 'wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
