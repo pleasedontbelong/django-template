@@ -9,3 +9,4 @@ django-split-settings==0.2.3
 
 # Addons requirements
 django-split-settings==0.2.3
+django-pipeline==1.6.10
