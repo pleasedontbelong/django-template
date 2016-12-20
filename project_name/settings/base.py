@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/1.10/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
-
 from split_settings.tools import include
 from os.path import dirname, join, realpath, abspath
 from sys import path
