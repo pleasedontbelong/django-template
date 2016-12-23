@@ -1,6 +1,10 @@
+# Core requirements
+
 dj-database-url==0.4.1
 django-extensions==1.7.2
 Django==1.10.0
 psycopg2==2.6.2
 django-extended-choices==1.1.1
 django-split-settings==0.2.3
+
+# Addons requirements
