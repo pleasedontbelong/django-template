@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
+from split_settings.tools import include
 from os.path import dirname, join, realpath, abspath
 from sys import path
 
@@ -126,3 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# ADDONS
+
+include('addons/*.py')
