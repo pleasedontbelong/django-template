@@ -18,7 +18,7 @@ for app in ordered_app_list:
         import_module(urls_module)
     except ImportError, e:
         # Ignore "no module named", raise on real errors
-        if 'No module named' in str(e) and 'urls' in str(e):
+        if 'No module named' not in str(e) and '.urls' not in str(e):
             raise
     else:
         urlpatterns += [
