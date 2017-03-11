@@ -1,4 +1,4 @@
-# full configuration http://www.django-rest-framework.org
+# full configuration http://www.django-rest-framework.org/api-guide/settings/
 
 INSTALLED_APPS += ("rest_framework",)  # NOQA
 
