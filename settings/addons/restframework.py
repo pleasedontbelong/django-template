@@ -25,9 +25,6 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'DEFAULT_FILTER_BACKENDS': (),
 
-    # Pagination
-    'PAGE_SIZE': None,
-
     # Filtering
     'SEARCH_PARAM': 'search',
     'ORDERING_PARAM': 'ordering',
