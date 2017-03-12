@@ -1,6 +1,7 @@
 """
 Django settings.
 """
+
 from split_settings.tools import include
 from os.path import dirname, join, realpath, abspath
 from sys import path
