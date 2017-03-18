@@ -30,5 +30,7 @@ PIPELINE = {
             ),
             "output_filename": "js/script.js",
         }
-    }
+    },
+    'CSS_COMPRESSOR': None,
+    'JS_COMPRESSOR': None,
 }
