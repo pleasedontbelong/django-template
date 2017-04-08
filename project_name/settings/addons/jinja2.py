@@ -8,7 +8,7 @@ TEMPLATES += [  # NOQA
         "OPTIONS": {
             "match_extension": ".jinja2",
             "app_dirname": "jinja2",
-            "auto_reload": DEBUG,  # NOQA
+            "auto_reload": True,  # Set to False in prod
         }
     },
 ]
