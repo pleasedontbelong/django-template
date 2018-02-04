@@ -8,3 +8,4 @@ psycopg2==2.6.2
 django-split-settings==0.2.3
 
 # Addons requirements
+django-braces==1.11.0
