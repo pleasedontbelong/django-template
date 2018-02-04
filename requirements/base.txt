@@ -12,3 +12,4 @@ django-braces==1.11.0
 django-pipeline==1.6.10
 Jinja2==2.9.4
 django-jinja==2.2.1
+django-extended-choices==1.1.1
